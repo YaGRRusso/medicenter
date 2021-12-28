@@ -5,18 +5,278 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+  <script type="text/javascript">
+    window.onload = function (){
+      document.querySelector(".menuMobile").addEventListener("click", function(){
+        if(document.querySelector(".menu nav ul").style.display == 'flex') {
+          document.querySelector(".menu nav ul").style.display == 'none';
+        } else {
+          document.querySelector(".menu nav ul").style.display == 'flex';
+        }
+      });
+    };
+  </script>
+
   <title>Medicenter</title>
 </head>
 <body>
+
   <header>
     <div class="container">
       <div class="logo">
         <img src="./assets/images/logo.png" alt="logo">
       </div>
       <div class="menu">
-        ...
+        <nav>
+          <div class="menuMobile">
+            <div class="mobileLine"></div>
+            <div class="mobileLine"></div>
+            <div class="mobileLine"></div>
+          </div>
+          <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
+
+  <section id="banner">
+    <div class="container column">
+      <div class="banner_headline">
+        <h1>Top notch experience</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      </div>
+      <div class="banner_options">
+        <div class="banner1">
+          <div class="banner_title">Emergency Case</div>
+          <div class="banner_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur iure mollitia unde quae aut possimus dolorem repellendus?</div>
+          <a href="">Read More</a>
+        </div>
+        <div class="banner2">
+          <div class="banner_title">Doctors Timetable</div>
+          <div class="banner_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur iure mollitia unde quae aut possimus dolorem repellendus?</div>
+          <a href="">Read More</a>
+        </div>
+        <div class="banner3">
+          <div class="banner_title">Opening Hours</div>
+          <div class="banner_desc">
+            <div class="banner_day">Monday - Friday<span>8h00 - 18h00</span></div>
+            <div class="banner_day">Monday - Friday<span>8h00 - 18h00</span></div>
+            <div class="banner_day">Monday - Friday<span>8h00 - 18h00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="geral">
+    <div class="container">
+      <section>
+        <div class="widget">
+          <div class="widget_title">
+            <div class="widget_title_text">Latest News</div>
+            <div class="widget_title_bar"></div>
+          </div>
+          <div class="widget_body flex">
+
+            <article>
+              <div class="news_data">
+                <div class="news_posted_at">01 Jan 2020</div>
+                <div class="news_comments">5</div>
+              </div>
+              <a href="">
+                <div class="news_thumbnail">
+                  <img src="./assets/images/dr.jpg" alt="imagem">
+                </div>
+                <div class="news_title">
+                  News Title
+                </div>
+                <div class="news_resume">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis similique reiciendis ad ipsum temporibus odit rerum aliquam consequuntur earum tempora cum veniam placeat, blanditiis cumque eligendi est dolorem commodi.
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <div class="news_data">
+                <div class="news_posted_at">01 Jan 2020</div>
+                <div class="news_comments">5</div>
+              </div>
+              <a href="">
+                <div class="news_thumbnail">
+                  <img src="./assets/images/dr.jpg" alt="imagem">
+                </div>
+                <div class="news_title">
+                  News Title
+                </div>
+                <div class="news_resume">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis similique reiciendis ad ipsum temporibus odit rerum aliquam consequuntur earum tempora cum veniam placeat, blanditiis cumque eligendi est dolorem commodi.
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <div class="news_data">
+                <div class="news_posted_at">01 Jan 2020</div>
+                <div class="news_comments">5</div>
+              </div>
+              <a href="">
+                <div class="news_thumbnail">
+                  <img src="./assets/images/dr.jpg" alt="imagem">
+                </div>
+                <div class="news_title">
+                  News Title
+                </div>
+                <div class="news_resume">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis similique reiciendis ad ipsum temporibus odit rerum aliquam consequuntur earum tempora cum veniam placeat, blanditiis cumque eligendi est dolorem commodi.
+                </div>
+              </a>
+            </article>
+
+            <article>
+              <div class="news_data">
+                <div class="news_posted_at">01 Jan 2020</div>
+                <div class="news_comments">5</div>
+              </div>
+              <a href="">
+                <div class="news_thumbnail">
+                  <img src="./assets/images/dr.jpg" alt="imagem">
+                </div>
+                <div class="news_title">
+                  News Title
+                </div>
+                <div class="news_resume">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis similique reiciendis ad ipsum temporibus odit rerum aliquam consequuntur earum tempora cum veniam placeat, blanditiis cumque eligendi est dolorem commodi.
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <aside>
+
+        <div class="widget">
+          <div class="widget_title">
+            <div class="widget_title_text">Departments</div>
+            <div class="widget_title_bar"></div>
+          </div>
+          <div class="widget_body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+
+        <div class="widget">
+          <div class="widget_title">
+            <div class="widget_title_text">Make an Apointment</div>
+            <div class="widget_title_bar"></div>
+          </div>
+          <div class="widget_body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </aside>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="container flexColumn">
+      <div class="footer_menu">
+        <div class="fm1">
+          <div class="banner_title">Health Insurance</div>
+          <div class="banner_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="fm2">
+          <div class="banner_title">Medical Records</div>
+          <div class="banner_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="fm3">
+          <div class="banner_title">Online Awards</div>
+          <div class="banner_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        </div>
+      </div>
+      <div class="footer_area">
+
+        <div class="footer_area_item">
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">About us</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A veniam ad reprehenderit sequi ut ducimus at quaerat, quas quam reiciendis ab omnis voluptatibus dolor, dignissimos necessitatibus libero molestiae sunt adipisci.
+              <div class="address">
+                Country<span>EUA</span>
+                <br>
+                Phone<span>(xx)xxxx-xxxx</span>
+                <br>
+                Email<span>xxxxx@xxxxx.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_area_item">
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Latest posts</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body">
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_area_item">
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Latest tweets</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body">
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="latest_post_item">
+                <h4>Title<span>4 days ago</span></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer_copyright">
+        © Copyright - All rights reserved
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
